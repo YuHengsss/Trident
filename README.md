@@ -11,7 +11,7 @@ Paper is coming soon!
 ## Introduction
 While CLIP has advanced open-vocabulary predictions, its performance on semantic segmentation remains suboptimal. 
 This shortfall primarily stems from its noisy semantic features and constrained resolution. 
-While previous adaptations addressed spatial invariance semantic, the issue of limited resolution remains unexplored. 
+While previous adaptations addressed noisy semantic, the issue of limited resolution remains unexplored. 
 To alleviate this issue, we introduce Trident, a training-free framework that first splices features extracted by CLIP and DINO from sub-images, then leverages SAM's encoder to create a correlation matrix for global aggregation.
 This repository contains the code for Trident on eight popular benchmarks.
 For more information, please refer to our [paper](https://arxiv.org/abs/2407.18559).
