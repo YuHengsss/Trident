@@ -15,6 +15,13 @@ from matplotlib.patches import Patch
 img_path = 'images/frog.jpg'
 name_list = ['frog', 'water', 'turtle', 'snail']
 
+# img_path = 'images/bear_case.jpg'
+# name_list = ['river', 'grass', 'bear', 'ground', 'wolverines']
+
+# img_path = 'images/horses.jpg'
+# name_list = ['sky', 'hill', 'tree', 'horse', 'grass', 'cloud']
+
+
 #SAM　settings
 sam_checkpoint = "/home/yuheng/project/trident-pure/exclude/sam_vit_b_01ec64.pth"
 model_type = "vit_b"
@@ -78,7 +85,7 @@ def trident_demo(img_path, name_list):
     ])(img)
     img_tensor = img_tensor.unsqueeze(0).to('cuda')
     model = Trident(clip_type='openai', model_type='ViT-B/16', vfm_model='dino', name_path='./configs/my_name.txt', sam_refinement=True,
-                    coarse_thresh=coarse_thresh, minimal_area=225, debug=True)
+                    coarse_thresh=coarse_thresh, minimal_area=225, debug=True, sam_ckpt=sam_checkpoint, sam_model_type=model_type)
     seg_pred, seg_logits = model.predict(img_tensor, data_samples=None, debug_img_path=img_path)  # [1, H, W]
     show_results(img_path, seg_pred, seg_logits, name_list, vis_thresh=0.01)
     pass

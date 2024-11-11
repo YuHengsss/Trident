@@ -29,7 +29,7 @@ class Trident(BaseSegmentor):
     def __init__(self, clip_type, model_type, vfm_model, name_path, device=torch.device('cuda'),
                  prob_thd=0.0, logit_scale=40, beta=1.2, gamma=3.0, slide_stride=112, slide_crop=336, debug = False,
                  sam_refinement=False, sam_model_type='vit_b', pamr_steps=0, pamr_stride=(8, 16),
-                 sam_ckpt='/home/yuheng/project/trident/exclude/sam_vit_b_01ec64.pth',
+                 sam_ckpt='/home/yuheng/project/trident-pure/exclude/sam_vit_b_01ec64.pth',
                  coarse_thresh=0.10, minimal_area=225,sam_mask_coff=0.005, **kwargs):
 
         data_preprocessor = SegDataPreProcessor(
