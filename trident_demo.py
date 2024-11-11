@@ -15,6 +15,7 @@ from matplotlib.patches import Patch
 img_path = 'images/frog.jpg'
 name_list = ['frog', 'water', 'turtle', 'snail']
 
+##you may try other images and name_list
 # img_path = 'images/bear_case.jpg'
 # name_list = ['river', 'grass', 'bear', 'ground', 'wolverines']
 
@@ -90,9 +91,9 @@ def trident_demo(img_path, name_list):
     show_results(img_path, seg_pred, seg_logits, name_list, vis_thresh=0.01)
     pass
 
-
-image = cv2.imread(img_path)
-image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-trident_demo(img_path, name_list)
+if __name__ == '__main__':
+    image = cv2.imread(img_path)
+    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+    trident_demo(img_path, name_list)
 
 

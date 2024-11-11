@@ -14,7 +14,7 @@ This shortfall primarily stems from its noisy semantic features and constrained 
 While previous adaptations addressed noisy semantic, the issue of limited resolution remains unexplored. 
 To alleviate this issue, we introduce Trident, a training-free framework that first splices features extracted by CLIP and DINO from sub-images, then leverages SAM's encoder to create a correlation matrix for global aggregation.
 This repository contains the code for Trident on eight popular benchmarks.
-For more information, please refer to our [paper](https://arxiv.org/abs/2407.18559).
+For more information, please refer to our [paper]().
 
 <p align="center">
   <img src="./assets/framework.png" width="800" />
@@ -60,7 +60,7 @@ pip install -r requirements.txt
 
 #### Datasets Preparation
 
-Please follow the [MMSeg data preparation document](https://github.com/open-mmlab/mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md) to download and pre-process the datasets.
+Please follow the [MMSeg data preparation document](https://github.com/open-mmlab/mmsegmentation/blob/main/docs/en/user_guides/2_dataset_prepare.md) to download and pre-process the datasets including PASCAL VOC, PASCAL Context, Cityscapes, ADE20k, COCO Object and COCO-Stuff164k.
 We provide some dataset processing scripts in the `process_dataset.sh`.
 
 

@@ -82,7 +82,7 @@ class Trident(BaseSegmentor):
         self.cross_patch_fusion = 'ave'
         self.query_words = query_words
 
-        if sam_model_type != 'vit_h':
+        if sam_model_type != 'vit_h' or not sam_refinement:
             #check https://github.com/facebookresearch/segment-anything/issues/540
             self.sam = sam_model_registry[sam_model_type](checkpoint=sam_ckpt).to(device=device).eval().half()
         self.sam.prompt_encoder = self.sam.prompt_encoder.float()
