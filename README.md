@@ -81,7 +81,7 @@ Before evaluating the model, you need to download the SAM checkpoints by the lin
 Then you may eval specific dataset by:
 
 ```bash
-python eval.py --config ./config/cfg_DATASET.py --workdir YOUR_WORK_DIR
+python eval.py --config ./config/cfg_DATASET.py --workdir YOUR_WORK_DIR --sam_refine
 ```
 
 or eval on all datasets:
