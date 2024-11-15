@@ -3,10 +3,21 @@
 <h1>Trident </h1>
 <h3>Harnessing Vision Foundation Models for High-Performance, Training-Free Open Vocabulary Segmentation</h3>
 
-Paper is coming soon!
 
-[//]: # (&#40;[arXiv:2407.18559]&#40;https://arxiv.org/abs/2407.18559&#41;&#41;)
+([arXiv:2411.09219](https://arxiv.org/abs/2411.09219))
 </div>
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/harnessing-vision-foundation-models-for-high/unsupervised-semantic-segmentation-with-4)](https://paperswithcode.com/sota/unsupervised-semantic-segmentation-with-4?p=harnessing-vision-foundation-models-for-high)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/harnessing-vision-foundation-models-for-high/unsupervised-semantic-segmentation-with-3)](https://paperswithcode.com/sota/unsupervised-semantic-segmentation-with-3?p=harnessing-vision-foundation-models-for-high)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/harnessing-vision-foundation-models-for-high/unsupervised-semantic-segmentation-with-10)](https://paperswithcode.com/sota/unsupervised-semantic-segmentation-with-10?p=harnessing-vision-foundation-models-for-high)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/harnessing-vision-foundation-models-for-high/unsupervised-semantic-segmentation-with-9)](https://paperswithcode.com/sota/unsupervised-semantic-segmentation-with-9?p=harnessing-vision-foundation-models-for-high)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/harnessing-vision-foundation-models-for-high/unsupervised-semantic-segmentation-with-8)](https://paperswithcode.com/sota/unsupervised-semantic-segmentation-with-8?p=harnessing-vision-foundation-models-for-high)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/harnessing-vision-foundation-models-for-high/unsupervised-semantic-segmentation-with-12)](https://paperswithcode.com/sota/unsupervised-semantic-segmentation-with-12?p=harnessing-vision-foundation-models-for-high)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/harnessing-vision-foundation-models-for-high/unsupervised-semantic-segmentation-with-11)](https://paperswithcode.com/sota/unsupervised-semantic-segmentation-with-11?p=harnessing-vision-foundation-models-for-high)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/harnessing-vision-foundation-models-for-high/unsupervised-semantic-segmentation-with-7)](https://paperswithcode.com/sota/unsupervised-semantic-segmentation-with-7?p=harnessing-vision-foundation-models-for-high)
+
+## News
+* **` Nov. 15th, 2024`**: We release paper and code for Trident.
 
 ## Introduction
 While CLIP has advanced open-vocabulary predictions, its performance on semantic segmentation remains suboptimal. 
@@ -14,7 +25,7 @@ This shortfall primarily stems from its noisy semantic features and constrained 
 While previous adaptations addressed noisy semantic, the issue of limited resolution remains unexplored. 
 To alleviate this issue, we introduce Trident, a training-free framework that first splices features extracted by CLIP and DINO from sub-images, then leverages SAM's encoder to create a correlation matrix for global aggregation.
 This repository contains the code for Trident on eight popular benchmarks.
-For more information, please refer to our [paper]().
+For more information, please refer to our [paper](https://arxiv.org/abs/2411.09219).
 
 <p align="center">
   <img src="./assets/framework.png" width="800" />
