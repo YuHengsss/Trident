@@ -88,7 +88,7 @@ or eval on all datasets:
 ```bash
 python eval_all.py
 ```
-Resutls are listed in `YOUR_WORK_DIR/results.txt`.
+Results are listed in `YOUR_WORK_DIR/results.txt`.
 
 #### Demo
 
