@@ -20,7 +20,7 @@ safetensors==0.4.3
 scipy==1.14.0
 scikit-image
 timm==0.4.12
-torch==2.1.0
+torch==1.13.1
 torchvision==0.14.1
 tqdm==4.65.2
 transformers==4.37.2
