@@ -17,6 +17,7 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/harnessing-vision-foundation-models-for-high/unsupervised-semantic-segmentation-with-7)](https://paperswithcode.com/sota/unsupervised-semantic-segmentation-with-7?p=harnessing-vision-foundation-models-for-high)
 
 ## News
+* **` June. 26th, 2025`**: Trident is accepted by ICCV2025.
 * **` Nov. 15th, 2024`**: We release paper and code for Trident.
 
 ## Introduction
@@ -104,7 +105,7 @@ python trident_demo.py
 If Trident is helpful for your research, please cite the following paper:
 
 ```
-@article{shi2024vssd,
+@article{shi2024trident,
     title={Harnessing Vision Foundation Models for High-Performance, Training-Free Open Vocabulary Segmentation},
     author={Yuheng Shi and Minjing Dong and Chang Xu},
     journal={arXiv preprint arXiv:2411.09219},
