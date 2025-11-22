@@ -1,7 +1,7 @@
 einops==0.3.0
 fsspec==2023.9.0
 ftfy==6.2.0
-horovod==0.28.1
+#horovod==0.28.1
 huggingface_hub==0.23.0
 matplotlib==3.7.2
 mmcv==2.1.0
@@ -20,7 +20,7 @@ safetensors==0.4.3
 scipy==1.14.0
 scikit-image
 timm==0.4.12
-torch==1.13.1
-torchvision==0.14.1
+torch==2.1.0
+torchvision==0.16.0
 tqdm==4.65.2
 transformers==4.37.2
